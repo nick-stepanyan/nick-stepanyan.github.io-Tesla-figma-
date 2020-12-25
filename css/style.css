@@ -1,0 +1,852 @@
+                                * {
+                                    box-sizing: border-box;
+                                }
+                                
+                                body {
+                                    font-family: 'Montserrat', sans-serif;
+                                    margin: 0;
+                                    padding: 0;
+                                    font-style: normal;
+                                    color: #000000;
+                                }
+                                
+                                .container {
+                                    width: 1440px;
+                                    margin: 0 auto;
+                                }
+                                
+                                nav {
+                                    display: flex;
+                                    margin: 24px 60px 0px 43px;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                
+                                .menu_1,
+                                .menu_2 {
+                                    list-style: none;
+                                    display: flex;
+                                    padding: 0;
+                                    justify-content: space-between;
+                                }
+                                
+                                li {
+                                    cursor: pointer;
+                                }
+                                
+                                .menu_2,
+                                .menu__item {
+                                    margin-right: 30px;
+                                }
+                                
+                                .menu__item {
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    color: #000000;
+                                    text-decoration: none;
+                                    padding-bottom: 6px;
+                                    border-bottom: 2px transparent solid;
+                                    transition: 0.3s;
+                                    font-family: 'Montserrat', sans-serif;
+                                }
+                                
+                                .menu__item:hover,
+                                .menu__item.active {
+                                    border-bottom: 2px #E51937 solid;
+                                    color: #E51937;
+                                }
+                                
+                                .item1 {
+                                    margin-right: 63px;
+                                }
+                                
+                                .item2 {
+                                    margin-right: 25px;
+                                }
+                                
+                                .item3 {
+                                    margin-right: 44px;
+                                }
+                                
+                                .item4 {
+                                    margin-right: 46px;
+                                }
+                                
+                                .tesla__title {
+                                    background-image: url(../img/Tesla\ logo\ +\ car.png);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    text-align: center;
+                                    min-height: 594px;
+                                    margin-bottom: 26px;
+                                }
+                                
+                                .tesla__title h1 {
+                                    margin: 0;
+                                    padding: 0;
+                                    font-weight: 600;
+                                    font-size: 90px;
+                                    line-height: 110px;
+                                }
+                                
+                                .tesla__title p {
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                
+                                .tesla__info {
+                                    justify-content: center;
+                                    display: flex;
+                                    margin-bottom: 38px;
+                                }
+                                
+                                .info__block {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-right: 81px;
+                                }
+                                
+                                .info__block_img {
+                                    width: 46px;
+                                    margin-right: 14px;
+                                }
+                                
+                                .info_block_text1 {
+                                    font-weight: 600;
+                                    font-size: 35px;
+                                    line-height: 43px;
+                                    margin-right: 6px;
+                                }
+                                
+                                .info_block_text1 span {
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    vertical-align: bottom;
+                                }
+                                
+                                .info_block_text2 {
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                }
+                                
+                                .test_drive {
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                                    align-items: center;
+                                    display: flex;
+                                    margin-left: 24px;
+                                    margin-right: 40px;
+                                    cursor: pointer;
+                                }
+                                
+                                .test_drive img {
+                                    margin-right: 7px;
+                                }
+                                
+                                .order {
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    height: 100%;
+                                    text-align: center;
+                                    vertical-align: center;
+                                    text-transform: uppercase;
+                                    cursor: pointer;
+                                    color: #E51937;
+                                    border: 2px solid #E51937;
+                                    padding: 11px 6px 5px 7px;
+                                    min-width: 160px;
+                                    min-height: 40px;
+                                    margin-top: 12px;
+                                    transition: 0.5s;
+                                }
+                                
+                                .go_bottom {
+                                    text-align: center;
+                                    display: block;
+                                    margin-bottom: 37px;
+                                }
+                                
+                                .order:hover {
+                                    font-size: large;
+                                    transition: 0.5s;
+                                    background-color: #f8f0f2;
+                                }
+                                
+                                @media (max-width:768px) and (min-width: 376px) {
+                                    .menu_item {
+                                        display: none;
+                                    }
+                                    .container {
+                                        width: 768px;
+                                        height: 100%;
+                                    }
+                                    .burger {
+                                        width: 35.23px;
+                                        height: 22.02px;
+                                        left: calc(50% - 35.23px/2 + 333.38px);
+                                    }
+                                    .menu__item {
+                                        display: none;
+                                    }
+                                    .tesla__title {
+                                        min-height: 450px;
+                                        background-size: contain;
+                                        background-position: center bottom;
+                                    }
+                                    .tesla__info {
+                                        flex-wrap: wrap;
+                                        margin-bottom: 63px;
+                                    }
+                                    nav {
+                                        margin: 24px 33px 94.8px 15px;
+                                        margin-right: 0;
+                                    }
+                                    .tesla__title h1 {
+                                        font-weight: 600;
+                                        font-size: 90px;
+                                        line-height: 110px;
+                                    }
+                                    .tesla__title p {
+                                        font-weight: 500;
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                    }
+                                    .info__block {
+                                        margin-right: 65px;
+                                        margin-left: 65px;
+                                        margin-bottom: 57px;
+                                    }
+                                    .info__block:nth-child(2) {
+                                        margin-right: 0px;
+                                    }
+                                    .info__block:nth-child(2) .info__block_img {
+                                        width: 38px;
+                                        height: 61px;
+                                    }
+                                    .info__block_img {
+                                        width: 65px;
+                                    }
+                                    /* .tesla__info:nth-child(2) {
+                    margin-right: 0px;
+                } */
+                                    .info_block_text1 {
+                                        font-weight: 600;
+                                        font-size: 50px;
+                                        line-height: 61px;
+                                    }
+                                    .info_block_text2 {
+                                        font-weight: normal;
+                                        font-size: 12px;
+                                        line-height: 15px;
+                                    }
+                                    .info_block_text1 span {
+                                        width: 53.03px;
+                                        height: 35.83px;
+                                        font-weight: 600;
+                                        font-size: 20px;
+                                        line-height: 24px;
+                                        vertical-align: middle;
+                                    }
+                                    .test_drive {
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        margin-right: 34px;
+                                        color: #E51937;
+                                    }
+                                    .test_drive_img {
+                                        width: 30px;
+                                        height: 30px;
+                                        color: #E51937;
+                                    }
+                                    .order {
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        line-height: 55px;
+                                        width: 220.84px;
+                                        height: 55.21px;
+                                        color: #FFFFFF;
+                                        background: #E51937;
+                                        margin-top: -12px;
+                                        padding: 0;
+                                    }
+                                }
+                                
+                                @media (max-width:375px) {
+                                    .menu_item {
+                                        display: none;
+                                    }
+                                    .container {
+                                        width: 375px;
+                                        height: 100%;
+                                    }
+                                    .menu__item {
+                                        display: none;
+                                    }
+                                    .tesla__title {
+                                        min-height: 200px;
+                                        background-size: contain;
+                                        background-position: center bottom;
+                                    }
+                                    .tesla__info {
+                                        flex-wrap: wrap;
+                                    }
+                                    nav {
+                                        margin: 5px 21px 43px 2px;
+                                        margin-right: 0;
+                                    }
+                                    .tesla__title h1 {
+                                        font-weight: 600;
+                                        font-size: 50px;
+                                        line-height: 61px;
+                                    }
+                                    .tesla__title p {
+                                        font-weight: 500;
+                                        font-size: 10px;
+                                        line-height: 12px;
+                                    }
+                                    .info__block {
+                                        margin-right: 0px;
+                                        margin-bottom: 43px;
+                                    }
+                                    .info__block:nth-child(2) {
+                                        margin-left: 20px;
+                                    }
+                                    .tesla__info:nth-child(2) {
+                                        margin-right: 0;
+                                    }
+                                    .info_block_text1 {
+                                        font-size: 27px;
+                                        margin-bottom: 2px;
+                                        line-height: 27px;
+                                    }
+                                    .info_block_text2 {
+                                        font-size: 10px;
+                                        font-weight: normal;
+                                        font-size: 10px;
+                                        line-height: 12px;
+                                    }
+                                    .test_drive {
+                                        margin-left: 0;
+                                        margin-right: 25px;
+                                        font-size: 13px;
+                                        line-height: 16px;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        color: #E51937;
+                                    }
+                                    .test_drive img {
+                                        color: #E51937;
+                                    }
+                                    .order {
+                                        font-weight: bold;
+                                        font-size: 13px;
+                                        line-height: 16px;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        color: #FFFFFF;
+                                        background: #E51937;
+                                        margin-top: 0;
+                                        padding: 0;
+                                    }
+                                }
+                                /* Главная или средняя секция! */
+                                
+                                .main {
+                                    /* min-height: 900px; */
+                                    color: #FFFFFF;
+                                }
+                                
+                                .main__inner {
+                                    display: flex;
+                                    background-image: url(../img/2013-tesla-model-s-cockpit.png);
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                }
+                                
+                                .left-section h2 {
+                                    font-weight: 600;
+                                    font-size: 70px;
+                                    line-height: 85px;
+                                    color: #E51937;
+                                    margin-left: 80px;
+                                }
+                                
+                                .right-section {
+                                    background: #E51937;
+                                    width: 440px;
+                                    max-height: 900px;
+                                    color: #FFFFFF;
+                                    padding: 51px 46px 63px 52px;
+                                }
+                                
+                                .main-top h3 {
+                                    font-weight: 600;
+                                    font-size: 30px;
+                                    line-height: 37px;
+                                    margin: 0;
+                                }
+                                
+                                .main-top p {
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    margin: 0;
+                                    margin-top: 11px;
+                                    margin-bottom: 54px;
+                                }
+                                
+                                .features {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 35px;
+                                }
+                                
+                                .features__img {
+                                    align-self: center;
+                                    margin-right: 19px;
+                                }
+                                
+                                .features__accent {
+                                    font-weight: 600;
+                                    font-size: 35px;
+                                    line-height: 43px;
+                                }
+                                
+                                .features__title {
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    margin: 0;
+                                }
+                                
+                                .features__text {
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    margin: 0;
+                                }
+                                
+                                .main-bottom {
+                                    display: flex;
+                                    margin-top: 127px;
+                                }
+                                
+                                .information {
+                                    display: flex;
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    align-self: center;
+                                    align-items: center;
+                                    margin-right: 22px;
+                                }
+                                
+                                .information a {
+                                    text-decoration: none;
+                                    color: #FFFFFF;
+                                }
+                                
+                                .information img {
+                                    margin-right: 12px;
+                                }
+                                
+                                .inverse__button {
+                                    font-weight: bold;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    text-transform: uppercase;
+                                    color: #FFFFFF;
+                                    border-color: #FFFFFF;
+                                    Width: 160px;
+                                    Height: 40px;
+                                    padding: 11px 6px 5px 7px;
+                                    margin-bottom: 14px;
+                                    transition: 0.5s;
+                                }
+                                
+                                .inverse__button:hover {
+                                    font-size: large;
+                                    transition: 0.5s;
+                                    background-color: #f52e4b;
+                                }
+                                
+                                @media (max-width:768px) and (min-width: 376px) {
+                                    .main {
+                                        height: auto;
+                                    }
+                                    .main__inner {
+                                        flex-direction: column;
+                                    }
+                                    .left-section h2 {
+                                        text-align: right;
+                                        margin: 34px 58px 0 0;
+                                    }
+                                    .left-section {
+                                        height: 500px;
+                                    }
+                                    .right-section {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding: 55px 50px 50px 35px;
+                                    }
+                                    .main-top-inner {
+                                        display: flex;
+                                    }
+                                    .main-top {
+                                        width: 320px;
+                                        margin-right: 70px;
+                                    }
+                                    .features-box {
+                                        width: 250px;
+                                    }
+                                    .main-bottom {
+                                        margin-top: 75px;
+                                        justify-content: center;
+                                    }
+                                    .information {
+                                        margin-right: 36px;
+                                    }
+                                    .order {
+                                        margin-top: 12px;
+                                    }
+                                }
+                                
+                                @media (max-width:375px) {
+                                    .main {
+                                        min-height: 500px;
+                                    }
+                                    .left-section {
+                                        min-height: 337px;
+                                    }
+                                    .right-section {
+                                        max-width: 375px;
+                                        background-image: url(../img/2013-tesla-model-s-cockpit.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        padding: 260px 29px 34px 30px;
+                                    }
+                                    .features-box,
+                                    .main-bottom,
+                                    .left-section h2 {
+                                        display: none;
+                                    }
+                                    .main-top p {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                                /* Футер или Footer - нижний блок верстки! */
+                                
+                                .footer__inner {
+                                    display: flex;
+                                }
+                                
+                                .footer__left {
+                                    background: #E51937;
+                                    width: 440px;
+                                    height: 900px;
+                                    color: #FFFFFF;
+                                }
+                                
+                                .footer__model-text {
+                                    width: 931px;
+                                    position: absolute;
+                                    font-weight: 600;
+                                    font-size: 200px;
+                                    line-height: 244px;
+                                    color: #E51937;
+                                    opacity: 0.1;
+                                    top: 97px;
+                                    left: 189px;
+                                    position: absolute;
+                                }
+                                
+                                .footer__left-head h3 {
+                                    font-weight: 600;
+                                    font-size: 30px;
+                                    line-height: 37px;
+                                    margin: 51px 68px 12px 56px;
+                                }
+                                
+                                .footer__left-body {
+                                    margin-bottom: 101px;
+                                }
+                                
+                                .footer__left-body h3 {
+                                    font-weight: 600;
+                                    font-size: 30px;
+                                    line-height: 37px;
+                                    margin: 0 121px 26px 56px;
+                                }
+                                
+                                .footer__left-head p {
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    margin: 0 68px 49px 56px;
+                                }
+                                
+                                .footer__left-body .rating {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                                
+                                .footer__left-body .rating__add {
+                                    font-weight: bold;
+                                    font-size: 10px;
+                                    line-height: 12px;
+                                    text-transform: uppercase;
+                                    opacity: 0.7;
+                                }
+                                
+                                .footer__left-body .raiting__title {
+                                    margin: 0 0 16px 56px;
+                                    font-weight: bold;
+                                    font-size: 17px;
+                                    line-height: 21px;
+                                    text-transform: uppercase;
+                                }
+                                
+                                .footer__left-body .raiting__star {
+                                    margin-right: 93px;
+                                }
+                                
+                                .footer__left-bottom .features__img {
+                                    margin-left: 66px;
+                                }
+                                
+                                .footer__left-bottom .features__title {
+                                    font-weight: 600;
+                                    font-size: 50px;
+                                    line-height: 61px;
+                                    margin-bottom: 0;
+                                }
+                                
+                                .footer__left-bottom .features__accent {
+                                    font-weight: 600;
+                                    font-size: 50px;
+                                    line-height: 61px;
+                                    margin-right: 12px;
+                                }
+                                
+                                .footer__left-bottom .features__text {
+                                    font-weight: 600;
+                                    font-size: 25px;
+                                    line-height: 30px;
+                                    margin-top: 0;
+                                }
+                                
+                                .main-bottom {
+                                    margin-top: 60px;
+                                    justify-content: center;
+                                }
+                                
+                                .footer__right {
+                                    position: relative;
+                                }
+                                
+                                .footer__img {
+                                    position: absolute;
+                                    top: 170px;
+                                    left: -95px;
+                                }
+                                
+                                @media (max-width:768px) and (min-width: 376px) {
+                                    .footer__left-head,
+                                    .footer__left-body {
+                                        width: 50%;
+                                    }
+                                    .footer__left {
+                                        height: 487.2088623046875px;
+                                    }
+                                    .footer__left-head {
+                                        padding-left: 34px;
+                                        padding-top: 63px;
+                                        padding-right: 30px;
+                                    }
+                                    .footer__left-body {
+                                        padding-left: 35px;
+                                        padding-right: 55px;
+                                        padding-top: 63px;
+                                        margin-bottom: 0;
+                                    }
+                                    .footer__inner {
+                                        flex-direction: column;
+                                    }
+                                    .main-bottom {
+                                        margin: 0;
+                                        justify-content: center;
+                                    }
+                                    .footer__left {
+                                        height: 513.208862px;
+                                        width: 768px;
+                                        left: 0px;
+                                        top: 2585.791015625px;
+                                        border-radius: 0px;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        order: 2;
+                                    }
+                                    .footer__left-head h3 {
+                                        font-weight: 600;
+                                        font-size: 30px;
+                                        line-height: 37px;
+                                        margin: 0;
+                                        margin-bottom: 12px;
+                                    }
+                                    .footer__left-body h3 {
+                                        font-weight: 600;
+                                        font-size: 30px;
+                                        line-height: 37px;
+                                        margin: 0;
+                                        margin-bottom: 29px;
+                                    }
+                                    .footer__left-head p {
+                                        font-weight: 500;
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                        margin: 0;
+                                    }
+                                    .footer__left-head p {
+                                        margin: 0;
+                                    }
+                                    .footer__left-bottom {
+                                        width: 100%;
+                                        margin: 70px auto 64px;
+                                    }
+                                    .footer__left-bottom .information {
+                                        margin: 0;
+                                        margin-right: 36px;
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                    }
+                                    .footer__left-bottom .informatio img {
+                                        width: 31px;
+                                        height: 31px;
+                                    }
+                                    .footer__left-bottom .features {
+                                        display: none;
+                                    }
+                                    .footer__left-bottom .order {
+                                        font-size: 16px;
+                                        line-height: 30px;
+                                        text-transform: uppercase;
+                                        width: 220.84px;
+                                        height: 55.21px;
+                                        text-align: center;
+                                        margin: 0;
+                                        padding: 11.04px 8.28px 11.04px 9.66px;
+                                    }
+                                    .footer__right {
+                                        height: 525px;
+                                        order: 1;
+                                    }
+                                    .footer__model-text {
+                                        top: 37px;
+                                        left: 82px;
+                                        font-weight: 600;
+                                        font-size: 148px;
+                                        line-height: 180px;
+                                        color: #E51937;
+                                        opacity: 0.1;
+                                        width: 665px;
+                                    }
+                                    .footer__img {
+                                        top: 72px;
+                                        left: -16px;
+                                        width: 750px;
+                                    }
+                                    .footer__left-body .rating__add {
+                                        font-weight: bold;
+                                        font-size: 10px;
+                                        line-height: 12px;
+                                        text-transform: uppercase;
+                                        opacity: 0.7;
+                                    }
+                                    .footer__left-body .raiting__title {
+                                        margin: 0 0 16px 0;
+                                        font-weight: bold;
+                                        font-size: 17px;
+                                        line-height: 21px;
+                                        text-transform: uppercase;
+                                    }
+                                    .footer__left-body .raiting__star {
+                                        margin: 0;
+                                        margin-bottom: 12px;
+                                    }
+                                }
+                                
+                                @media (max-width:375px) {
+                                    .footer__left-body,
+                                    .main-bottom,
+                                    .features {
+                                        display: none;
+                                    }
+                                    .footer__inner {
+                                        flex-direction: column;
+                                    }
+                                    .footer__left {
+                                        width: 375px;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        order: 2;
+                                    }
+                                    .footer__right {
+                                        height: 300px;
+                                        order: 1;
+                                    }
+                                    .footer__img {
+                                        top: 59px;
+                                        left: 0;
+                                        width: 362px;
+                                    }
+                                    .footer__model-text {
+                                        overflow: hidden;
+                                        width: 900px;
+                                        top: 0;
+                                        left: 0;
+                                        font-weight: 600;
+                                        font-size: 90px;
+                                        line-height: 122px;
+                                    }
+                                    .footer__left-head h3 {
+                                        font-weight: 600;
+                                        font-size: 30px;
+                                        line-height: 37px;
+                                        margin: 0;
+                                        padding: 18px 29px 11px 30px;
+                                    }
+                                    .footer__left-head p {
+                                        font-weight: 500;
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                        margin: 0;
+                                        padding: 0 29px 0 30px;
+                                    }
+                                    .footer__left {
+                                        max-height: 304px;
+                                    }
+                                    ​
+                                }
